@@ -1,1 +1,72 @@
 file created
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~ (main)
+$ cd ~/workspace/dive-into-code/text/github
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  pwd
+/c/Users/bunmi/workspace/dive-into-code/text/github
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  git init
+Reinitialized existing Git repository in C:/Users/bunmi/workspace/dive-into-code/text/github/.git/
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  touch github_paperfolding.txt
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$ ls
+README.md      github_paperfolding.md   github_task.md
+git_sample.md  github_paperfolding.txt
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$ echo
+
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  echo "file created" >>  github_paperfolding.txt
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        github_paperfolding.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  git add github_paperfolding.txt
+warning: in the working copy of 'github_paperfolding.txt', LF will be replaced by CRLF the next time Git touches it
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$ git commit -m "first_commit" github_paperfolding.txt
+warning: in the working copy of 'github_paperfolding.txt', LF will be replaced by CRLF the next time Git touches it
+[main c79a8be] first_commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 github_paperfolding.txt
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  git push git@github.com:bunmidenton/paper_folding_problem.git
+Enter passphrase for key '/c/Users/bunmi/.ssh/id_rsa':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 113.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:bunmidenton/paper_folding_problem.git
+   de35086..c79a8be  main -> main
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$  git remote add origin git@github.com:bunmidenton/paper_folding_problem.git
+error: remote origin already exists.
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main)
+$ git remote -v
+origin  [git@github.com:bunmidenton/for_git_study.git] (fetch)
+origin  [git@github.com:bunmidenton/for_git_study.git] (push)
+
+bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main
