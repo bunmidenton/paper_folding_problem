@@ -70,3 +70,83 @@ origin  [git@github.com:bunmidenton/for_git_study.git] (fetch)
 origin  [git@github.com:bunmidenton/for_git_study.git] (push)
 
 bunmi@DESKTOP-VGEK7DT MINGW64 ~/workspace/dive-into-code/text/github (main
+
+
+
+Problem 1
+a
+THICKNESS = 0.00008
+
+folded_thickness = THICKNESS * 2 **43
+
+print("Thickness: {} meters".format(folded_thickness))
+
+THICKNESS = 0.00008
+
+folded_thickness = THICKNESS * 2 **43
+
+print("Thickness: {} meters".format(folded_thickness))
+
+print("Thickness: {: .2f} kilometers".format(folded_thickness / 10000))
+
+num_of_folds = 43
+THICKNESS = 0.00008
+for i in range(num_of_folds):
+    THICKNESS = THICKNESS * 2
+    print(THICKNESS)
+
+import time
+start = time.time()
+THICKNESS = 0.00008
+
+folded_thickness = THICKNESS * 2 **43
+
+print("Thickness: {} meters".format(folded_thickness))
+elapsed_time = time.time() - start
+print("time : {}[s]".format(elapsed_time))
+
+import time
+start = time.time()
+num_of_folds = 43
+THICKNESS = 0.00008
+for i in range(num_of_folds):
+    THICKNESS = THICKNESS * 2
+    print(THICKNESS)
+    elapsed_time = time.time() - start
+print("time : {}[s]".format(elapsed_time))
+
+folded_list = [0.00008,]
+thickness = 0.00008
+for i in range(43):
+    thickness = thickness * 2
+    folded_list.append(thickness)
+    print(folded_list)
+    
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+plt.title("thickness of folded paper")
+plt.xlabel("number of folds")
+plt.ylabel("thickness [m]")
+plt.plot(folded_list)
+plt.show()
+
+print(len(folded_list))
+
+plt.title("thickness of folded paper")
+plt.xlabel("number of folds")
+plt.ylabel("thickness [m]")
+plt.plot(folded_list, color='red')
+plt.show()
+
+plt.title("thickness of folded paper")
+plt.xlabel("number of folds")
+plt.ylabel("thickness [m]")
+plt.plot(folded_list, color='green')
+plt.show()
+
+plt.title("thickness of folded paper")
+plt.xlabel("number of folds")
+plt.ylabel("thickness [m]")
+plt.plot(folded_list, color='red', linestyle='dashed', marker='o')
+plt.show()
